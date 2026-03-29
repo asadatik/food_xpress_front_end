@@ -1,0 +1,186 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* FoodExpress Brand Colors */
+  --primary: #E21B70;
+  --primary-light: #F28BB8;
+  --primary-dark: #B71558;
+  --secondary: #FFB100;
+  --secondary-light: #FFD966;
+  
+  /* Backgrounds */
+  --background: #FFFFFF;
+  --background-subtle: #F8FAFC;
+  --foreground: #1F2937;
+  --foreground-muted: #6B7280;
+  
+  /* Card & Surface */
+  --card: #FFFFFF;
+  --card-foreground: #1F2937;
+  --card-border: #E5E7EB;
+  
+  /* Semantic */
+  --popover: #FFFFFF;
+  --popover-foreground: #1F2937;
+  --muted: #F3F4F6;
+  --muted-foreground: #9CA3AF;
+  --accent: #E21B70;
+  --accent-foreground: #FFFFFF;
+  --destructive: #DC2626;
+  --destructive-foreground: #FFFFFF;
+  --success: #10B981;
+  --warning: #F59E0B;
+  
+  /* UI Elements */
+  --border: #E5E7EB;
+  --input: #F3F4F6;
+  --ring: #E21B70;
+  
+  /* Charts */
+  --chart-1: #E21B70;
+  --chart-2: #FFB100;
+  --chart-3: #10B981;
+  --chart-4: #3B82F6;
+  --chart-5: #8B5CF6;
+  
+  /* Layout */
+  --radius: 1.5rem;
+  
+  /* Sidebar (if needed) */
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #1F2937;
+  --sidebar-primary: #E21B70;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #FFB100;
+  --sidebar-accent-foreground: #1F2937;
+  --sidebar-border: #E5E7EB;
+  --sidebar-ring: #E21B70;
+}
+
+.dark {
+  --background: #0F172A;
+  --background-subtle: #1E293B;
+  --foreground: #F1F5F9;
+  --foreground-muted: #CBD5E1;
+  --card: #1E293B;
+  --card-foreground: #F1F5F9;
+  --card-border: #334155;
+  --popover: #1E293B;
+  --popover-foreground: #F1F5F9;
+  --muted: #334155;
+  --muted-foreground: #94A3B8;
+  --accent: #F472B6;
+  --accent-foreground: #0F172A;
+  --destructive: #F87171;
+  --destructive-foreground: #0F172A;
+  --success: #6EE7B7;
+  --warning: #FCD34D;
+  --border: #334155;
+  --input: #334155;
+  --ring: #F472B6;
+  --chart-1: #F472B6;
+  --chart-2: #FCD34D;
+  --chart-3: #6EE7B7;
+  --chart-4: #60A5FA;
+  --chart-5: #C4B5FD;
+}
+
+@theme inline {
+  --font-sans: 'Geist', system-ui, sans-serif;
+  --font-mono: 'Geist Mono', 'Courier New', monospace;
+  --color-primary: var(--primary);
+  --color-primary-light: var(--primary-light);
+  --color-primary-dark: var(--primary-dark);
+  --color-secondary: var(--secondary);
+  --color-secondary-light: var(--secondary-light);
+  --color-background: var(--background);
+  --color-background-subtle: var(--background-subtle);
+  --color-foreground: var(--foreground);
+  --color-foreground-muted: var(--foreground-muted);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-card-border: var(--card-border);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius: var(--radius);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}
+
+/* Glassmorphism and Premium Effects */
+@layer utilities {
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+  
+  .glass-dark {
+    @apply bg-black/10 backdrop-blur-md border border-white/10;
+  }
+  
+  .card-glass {
+    @apply bg-white/40 backdrop-blur-md border border-white/30 rounded-3xl;
+  }
+  
+  .card-glass-dark {
+    @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl;
+  }
+  
+  .soft-shadow {
+    @apply shadow-sm hover:shadow-md transition-shadow duration-300;
+  }
+  
+  .glow-shadow {
+    @apply shadow-lg shadow-primary/20;
+  }
+  
+  .hover-lift {
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+  
+  .smooth-scale {
+    @apply transition-transform duration-300 hover:scale-105;
+  }
+  
+  .gradient-primary {
+    @apply bg-gradient-to-br from-primary to-primary-dark;
+  }
+  
+  .gradient-secondary {
+    @apply bg-gradient-to-br from-secondary to-secondary-light;
+  }
+  
+  .text-balance-v0 {
+    text-wrap: balance;
+  }
+}
