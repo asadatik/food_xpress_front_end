@@ -412,7 +412,6 @@ function CategorySection({
 }
 
 // Main Component 
-
 export function RestaurantMenu({ restaurant, onClose }: RestaurantMenuProps) {
 
   const { addItem, updateQuantity, items: globalItems } = useCart() 

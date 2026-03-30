@@ -6,6 +6,7 @@ import { Star, Clock, MapPin, ChevronLeft, ChevronRight, Bike, TrendingUp, Utens
 import { categories, restaurants, type Restaurant, type Category } from '@/data/mock-data'
 // Import the new Menu component
 import { RestaurantMenu } from './Restaurantmenu'
+import Link from 'next/link'
 
 // Constants
 const ALL = 'All'
@@ -268,9 +269,11 @@ function SectionHeader({ active, count }: { active: string; count: number }) {
           {count} {count === 1 ? 'place' : 'places'} available near you
         </motion.p>
       </div>
+      <Link href="/restaurants">
       <button className="hidden sm:flex items-center gap-1.5 text-sm font-semibold text-[#E21B70] hover:underline transition-colors">
         View All <ChevronRight size={14} />
       </button>
+      </Link>
     </div>
   )
 }
