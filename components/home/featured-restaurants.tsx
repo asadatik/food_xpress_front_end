@@ -308,10 +308,9 @@ export function FeaturedRestaurants() {
 
   const [selectedRestaurant, setSelectedRestaurant] = useState<Restaurant | null>(null)
 
-  const filtered =
-    activeCategory === ALL
-      ? restaurants
-      : restaurants.filter((r: Restaurant) => r.cuisineType === activeCategory)
+const filtered = activeCategory === ALL 
+  ? restaurants.slice(0, 9)                
+  : restaurants.filter((r: Restaurant) => r.cuisineType === activeCategory).slice(0, 9)          
 
   return (
     <section className="bg-[#fafafa] min-h-screen">

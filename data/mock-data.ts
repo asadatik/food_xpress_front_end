@@ -474,6 +474,245 @@ export const restaurants: Restaurant[] = [
       },
     ],
   },
+{
+    id: '9',
+    name: 'The Steakhouse Elite',
+    image: 'https://images.unsplash.com/photo-1546241072-48010ad28c2c?w=500&h=300&fit=crop',
+    rating: 4.7,
+    deliveryTime: 40,
+    deliveryFee: 5.99,
+    distance: 2.5,
+    minOrder: 25,
+    cuisineType: 'Steak',
+    badge: 'Premium',
+    badgeColor: 'bg-purple-600',
+    isOpen: true,
+    menu: [
+      {
+        id: 'm33',
+        name: 'Ribeye Steak',
+        description: 'Prime cut ribeye with garlic butter and asparagus',
+        price: 29.99,
+        category: 'mains',
+        image: 'https://images.unsplash.com/photo-1546241072-48010ad28c2c?w=300&h=300&fit=crop',
+        isPopular: true,
+      }
+    ],
+  },
+  {
+    id: '10',
+    name: 'Healthy Bowls & Co.',
+    image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=500&h=300&fit=crop',
+    rating: 4.6,
+    deliveryTime: 20,
+    deliveryFee: 0, // Free Delivery test
+    distance: 0.5,
+    minOrder: 12,
+    cuisineType: 'Healthy',
+    badge: 'Free Delivery',
+    badgeColor: 'bg-green-500',
+    isOpen: true,
+    menu: [
+      {
+        id: 'm34',
+        name: 'Quinoa Buddha Bowl',
+        description: 'Quinoa, kale, roasted chickpeas, and tahini dressing',
+        price: 13.49,
+        category: 'bowls',
+        image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=300&h=300&fit=crop',
+        isPopular: true,
+      }
+    ],
+  },
+  {
+    id: '11',
+    name: 'Wok & Roll Chinese',
+    image: 'https://images.unsplash.com/photo-1525755662778-989d0524087e?w=500&h=300&fit=crop',
+    rating: 4.3,
+    deliveryTime: 30,
+    deliveryFee: 2.49,
+    distance: 1.4,
+    minOrder: 15,
+    cuisineType: 'Asian',
+    isOpen: true,
+    menu: [
+      {
+        id: 'm35',
+        name: 'Kung Pao Chicken',
+        description: 'Classic spicy stir-fry with peanuts and vegetables',
+        price: 14.99,
+        category: 'main',
+        image: 'https://images.unsplash.com/photo-1525755662778-989d0524087e?w=300&h=300&fit=crop',
+      }
+    ],
+  },
+  {
+    id: '12',
+    name: 'The Caffeine Hub',
+    image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=500&h=300&fit=crop',
+    rating: 4.9,
+    deliveryTime: 15,
+    deliveryFee: 1.49,
+    distance: 0.4,
+    minOrder: 5,
+    cuisineType: 'Beverages',
+    badge: 'Super Fast',
+    badgeColor: 'bg-blue-500',
+    isOpen: true,
+    menu: [
+      {
+        id: 'm36',
+        name: 'Caramel Macchiato',
+        description: 'Rich espresso with steamed milk and caramel drizzle',
+        price: 5.49,
+        category: 'coffee',
+        image: 'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=300&h=300&fit=crop',
+        isPopular: true,
+      }
+    ],
+  },
+  {
+    id: '13',
+    name: 'Istanbul Kebab House',
+    image: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=500&h=300&fit=crop',
+    rating: 4.5,
+    deliveryTime: 35,
+    deliveryFee: 3.99,
+    distance: 2.0,
+    minOrder: 18,
+    cuisineType: 'Middle Eastern',
+    isOpen: true,
+    menu: [
+      {
+        id: 'm37',
+        name: 'Mixed Grill Platter',
+        description: 'Lamb chops, chicken shish, and adana kebab with rice',
+        price: 22.99,
+        category: 'grill',
+        image: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=300&h=300&fit=crop',
+      }
+    ],
+  },
+  {
+    id: '14',
+    name: 'Pasta e Basta',
+    image: 'https://images.unsplash.com/photo-1473093226795-af9932fe5856?w=500&h=300&fit=crop',
+    rating: 4.7,
+    deliveryTime: 28,
+    deliveryFee: 2.99,
+    distance: 1.1,
+    minOrder: 15,
+    cuisineType: 'Italian',
+    badge: 'Top Choice',
+    badgeColor: 'bg-[#E21B70]',
+    isOpen: true,
+    menu: [
+      {
+        id: 'm38',
+        name: 'Lasagna Bolognese',
+        description: 'Traditional layered pasta with rich meat sauce',
+        price: 16.50,
+        category: 'pasta',
+        image: 'https://images.unsplash.com/photo-1473093226795-af9932fe5856?w=300&h=300&fit=crop',
+        isPopular: true,
+      }
+    ],
+  },
+  {
+    id: '15',
+    name: 'Veggie Delight',
+    image: 'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=500&h=300&fit=crop',
+    rating: 4.4,
+    deliveryTime: 25,
+    deliveryFee: 1.99,
+    distance: 0.9,
+    minOrder: 10,
+    cuisineType: 'Vegetarian',
+    isOpen: true,
+    menu: [
+      {
+        id: 'm39',
+        name: 'Garden Fresh Salad',
+        description: 'Organic greens, cherry tomatoes, and balsamic glaze',
+        price: 11.99,
+        category: 'salad',
+        image: 'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=300&h=300&fit=crop',
+      }
+    ],
+  },
+  {
+    id: '16',
+    name: 'Brooklyn Bagel Shop',
+    image: 'https://images.unsplash.com/photo-1517433367423-c7e5b0f35086?w=500&h=300&fit=crop',
+    rating: 4.8,
+    deliveryTime: 18,
+    deliveryFee: 0.99,
+    distance: 0.3,
+    minOrder: 8,
+    cuisineType: 'Breakfast',
+    isOpen: true,
+    menu: [
+      {
+        id: 'm40',
+        name: 'Lox & Cream Cheese Bagel',
+        description: 'Smoked salmon, cream cheese, capers, and onions',
+        price: 9.99,
+        category: 'bagels',
+        image: 'https://images.unsplash.com/photo-1517433367423-c7e5b0f35086?w=300&h=300&fit=crop',
+        isPopular: true,
+      }
+    ],
+  },
+  {
+    id: '17',
+    name: 'Ocean Fresh Seafood',
+    image: 'https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=500&h=300&fit=crop',
+    rating: 4.6,
+    deliveryTime: 45,
+    deliveryFee: 4.99,
+    distance: 3.2,
+    minOrder: 30,
+    cuisineType: 'Seafood',
+    isOpen: true,
+    menu: [
+      {
+        id: 'm41',
+        name: 'Grilled Salmon',
+        description: 'Wild-caught salmon with lemon butter sauce',
+        price: 24.99,
+        category: 'main',
+        image: 'https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=300&h=300&fit=crop',
+      }
+    ],
+  },
+  {
+    id: '18',
+    name: 'Sweet Tooth Confectionery',
+    image: 'https://images.unsplash.com/photo-1551024601-bec78aea704b?w=500&h=300&fit=crop',
+    rating: 4.9,
+    deliveryTime: 22,
+    deliveryFee: 2.49,
+    distance: 1.2,
+    minOrder: 15,
+    cuisineType: 'Desserts',
+    badge: 'Best Rated',
+    badgeColor: 'bg-yellow-500',
+    isOpen: true,
+    menu: [
+      {
+        id: 'm42',
+        name: 'Glazed Donuts (Box of 4)',
+        description: 'Assorted artisan donuts made fresh daily',
+        price: 12.00,
+        category: 'donuts',
+        image: 'https://images.unsplash.com/photo-1551024601-bec78aea704b?w=300&h=300&fit=crop',
+        isPopular: true,
+      }
+    ],
+  }
+
+
+
 ]
 
 export const getRestaurantById = (id: string) => {

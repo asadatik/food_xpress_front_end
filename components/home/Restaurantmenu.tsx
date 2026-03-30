@@ -454,7 +454,7 @@ export function RestaurantMenu({ restaurant, onClose }: RestaurantMenuProps) {
     }
   }, [globalItems, updateQuantity])
 
-  // animation config 
+  //animation config 
   const isMobile = typeof window !== 'undefined' && window.innerWidth < 640
 
   const panelVariants: Variants = {
