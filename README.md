@@ -21,16 +21,16 @@ Visit `http://localhost:3000` in your browser.
 
 ## Project Status
 
-**Current Phase**: MVP (Minimum Viable Product) ✅
+**Current Phase**: MVP (Minimum Viable Product) 
 - Beautiful, animated landing page
 - Restaurant browsing & filtering
 - Shopping cart with global state management
 - Responsive design (mobile-first)
+-  User Authentication
+-  Order Management
+-  Payment Integration
 
 **Upcoming Phases**:
-- Phase 1: User Authentication
-- Phase 2: Order Management
-- Phase 3: Payment Integration (Stripe)
 - Phase 4: Real-time Tracking
 - Phase 5+: Admin Dashboard, Reviews, etc.
 
