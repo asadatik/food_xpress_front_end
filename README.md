@@ -136,13 +136,3 @@ npm start
    - `features/hero/hero-section.tsx` - Hero copy
    - `app/page.tsx` - Page text
 
-## Future Roadmap
-
-Phase 1: Authentication (Week 1-2)
-Phase 2: Order Management (Week 2-3)
-Phase 3: Payment Integration (Week 3-4)
-Phase 4: Real-time Tracking (Week 4-5)
-Phase 5: Favorites & Personalization (Week 5-6)
-Phase 6: Search & Advanced Filters (Week 6-7)
-Phase 7: Reviews & Ratings (Week 7-8)
-Phase 8: Admin Dashboard (Week 8-10)
